@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+    font-family: 'Sheeping Dogs';
+    src: $font-SheepingDog;
+}
+
+@font-face {
+    font-family: 'Kenyan Coffee';
+    src: $font-KenyanCoffeeReg;
+}
+
+@font-face {
+    font-family: 'Kenyan Coffee Bold';
+    src: $font-KenyanCoffeeBold;
+}
+
+body{
+    background: $body_bg 50% 0, -moz-linear-gradient( -180deg, rgb(254,253,255) 0%, rgb(247,239,255) 18%, rgb(231,215,253) 48%, rgb(246,237,255) 74%, rgb(246,238,254) 100%);
+    background: $body_bg 50% 0, linear-gradient( -180deg, rgb(254,253,255) 0%, rgb(247,239,255) 18%, rgb(231,215,253) 48%, rgb(246,237,255) 74%, rgb(246,238,254) 100%);
+    background: $body_bg 50% 0, -ms-linear-gradient( -180deg, rgb(254,253,255) 0%, rgb(247,239,255) 18%, rgb(231,215,253) 48%, rgb(246,237,255) 74%, rgb(246,238,254) 100%);
+    
+}
+.ff-special{
+    font-family: 'Sheeping Dogs';
+    text-transform: initial;
+}
+.sec-padding {
+    padding: 80px 0;
+    &.\--small {
+      padding: 44px 0;
+    }
+    &.\--xsmall {
+      padding: 18px 0;
+    }
+  
+    &.\--medium {
+      padding: 60px 0;
+    }
+    &.\--large {
+      padding: 140px 0;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .sec-padding {
+      padding: 40px 0;
+      &.\--large {
+        padding: 60px 0;
+      }
+    }
+  }
+header{
+    
+}
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+    font-family: 'Roboto';
+}
+.purple-overlay{
+    background-color:  rgba(var(--bs-alt-purple-rgb), .28);
+    padding:10px 15px;
+    border-radius: 26px;
+    margin: 1rem 0;
+    *{
+        line-height: 1.1;
+    }
+}
+.fish-title-row{
+    h3,h2{
+        text-transform: uppercase;
+        color: $secondary;
+    }
+    h2{
+        font-weight: $font-weight-normal;
+    }
+    h2.secondary{
+        font-family: 'Sheeping Dogs';
+    }
+    .fish-title{
+        text-transform: uppercase;
+        .fish-span{
+            max-width: 120px;
+            img{
+                width: 100px;
+            }
+        }
+    }
+    &.\--right{
+        text-align: right;
+    }
+}
