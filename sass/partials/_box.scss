@@ -172,6 +172,8 @@
             height: 110%;
             background-image: $mint-bg;
             z-index: -1;
+            background-size: contain;
+    background-repeat: no-repeat;
         }
 
         .mint-title {
