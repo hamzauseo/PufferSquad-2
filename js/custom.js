@@ -180,4 +180,90 @@ $(function () {
             }
         ]
     });
+     //*****************************
+    // Responsive Slider
+    //*****************************
+    var tabrespsliders = {
+        1: { slider: '.difference-slider' }
+    };
+
+    //*****************************
+    // Responsive Slider
+    //*****************************
+    var respsliders = {
+        1: { slider: '.res-slider' }
+
+    };
+    //*****************************
+    // Function for Responsive Slider 991
+    //*****************************
+
+    $.each(tabrespsliders, function () {
+
+        $(this.slider).slick({
+            arrows: false,
+            dots: true,
+            autoplay: true,
+            slidesToShow: 2,
+            settings: "unslick",
+            responsive: [
+                {
+                    breakpoint: 2000,
+                    settings: "unslick"
+                },
+                {
+                    breakpoint: 991,
+                    settings: {
+                        unslick: true
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        unslick: true
+                    }
+                }
+            ]
+        });
+    });
+
+
+    //*****************************
+    // Function for Responsive Slider 767
+    //*****************************
+
+    $.each(respsliders, function () {
+
+        $(this.slider).slick({
+            arrows: false,
+            dots: true,
+            autoplay: true,
+            settings: "unslick",
+            responsive: [
+                {
+                    breakpoint: 2000,
+                    settings: "unslick"
+                },
+                 
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        unslick: true,
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        unslick: true,
+                        slidesToShow: 2,
+                    }
+                }
+            ]
+        });
+    });
+
+
+
 });
