@@ -22,6 +22,8 @@ $custom-theme-colors: (
     "altwhite": #ffffff77,
     "dk-orange": #d05c00,
     "lg-grey": #474b57,
+    "lg-green": #afbe35,
+    "dk-green": #585f20,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);

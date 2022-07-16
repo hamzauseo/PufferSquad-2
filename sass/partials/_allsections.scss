@@ -12,6 +12,62 @@ section {
 
         .banner-content {
             text-align: center;
+
+            .dropDateCount {
+                padding: 10px 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                max-width: 330px;
+                margin: 10px auto;
+                background: #5c447c0d;
+                border-radius: 30px;
+
+                .colon {
+                    font-size: 50px;
+                    color: $primary;
+                    position: relative;
+                    margin-top: -19px;
+                }
+
+                >div {
+                    display: block;
+
+                    span {
+                        display: block;
+                        font-size: 14px;
+                        // margin:4px 0;
+                        color: $primary;
+                        text-transform: capitalize;
+
+                        &.number {
+                            line-height: 1.2;
+                            //   font-family: $heading-font-family;
+                            font-weight: 700;
+                            font-size: 30px;
+                            color: $primary;
+                        }
+                    }
+                }
+
+                @media(max-width: 767px) {
+                    padding: 5px 15px;
+
+                    .colon {
+                        font-size: 25px;
+                    }
+
+                    >div {
+                        span {
+                            font-size: 10px;
+
+                            &.number {
+                                font-size: 18px !important;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         .hero-banner-image {
@@ -35,6 +91,7 @@ section {
             height: 400px;
             position: absolute;
         }
+
     }
 
     &.about-section {
@@ -133,6 +190,7 @@ section {
                 padding: 20px 10px 40px 10px;
                 margin: 0px 10px;
                 border-radius: 24px;
+
                 .box {
                     margin: 0px 7px;
                 }
@@ -150,7 +208,7 @@ section {
                 }
             }
 
-          
+
         }
     }
 
@@ -217,6 +275,49 @@ section {
             &.open-sea {
                 img.opensea-logo {
                     max-width: 180px;
+                }
+            }
+        }
+
+        .mint-box {
+            .inner {
+                .dropDateCount {
+                    padding: 40px 0 0 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    max-width: 580px;
+                    text-align: center;
+
+                    .colon {
+                        font-size: 90px;
+                        color: white;
+                        transform: translateY(-27px);
+                        // font-family: $font-special;
+                    }
+
+                    >div {
+                        display: block;
+
+                        span {
+                            display: block;
+                            font-size: 24px;
+                            // margin:4px 0;
+                            // font-family: $font-special;
+                            color: $info;
+                            text-transform: capitalize;
+
+                            &.number {
+                                line-height: 1.2;
+                                // font-family: $font-special;
+                                // font-family: $heading-font-family;
+                                font-weight: 700;
+                                font-size: 70px;
+                                color: white;
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -879,11 +980,49 @@ ul.social-icons {
             .mint-box {
                 margin: -15px;
                 border-radius: 0px;
-                padding: 40px 30px;
+                padding: 30px 30px;
                 text-align: center;
 
                 &:before {
                     top: 40%;
+                }
+
+                .inner {
+                    .dropDateCount {
+                        padding: 20px 0 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        max-width: 340px;
+                        margin: auto;
+
+                        .colon {
+                            transform: translateY(-15px);
+                            font-size: 20px;
+                            color: white;
+                        }
+
+                        >div {
+                            display: block;
+
+                            span {
+                                display: block;
+                                font-size: 12px;
+                                // margin:4px 0;
+                                color: #DFE8F6;
+                                text-transform: capitalize;
+
+                                &.number {
+                                    line-height: 1.2;
+                                    // font-family: $heading-font-family;
+                                    font-weight: 700;
+                                    font-size: 28px;
+                                    margin-bottom: 10px;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
                 }
 
                 .mint-title {
@@ -902,6 +1041,8 @@ ul.social-icons {
                     }
                 }
             }
+
+
         }
 
         &.join-community {
@@ -915,56 +1056,70 @@ ul.social-icons {
             .content {
                 font-size: $font-size-lg  !important;
             }
-            .row{
-                margin:0px;
+
+            .row {
+                margin: 0px;
             }
         }
-        &.roadmap{
-            &:before{
+
+        &.roadmap {
+            &:before {
                 display: none;
             }
         }
-        &.our-team{
-            .slick-prev,.slick-next{
-                width:30px;
-                height:30px;
-                &:before{
+
+        &.our-team {
+
+            .slick-prev,
+            .slick-next {
+                width: 30px;
+                height: 30px;
+
+                &:before {
                     background-size: 32px;
                 }
             }
         }
-        &.reachout{
-            .reachout-content{
-                p{
+
+        &.reachout {
+            .reachout-content {
+                p {
 
                     font-size: $font-size-base;
                 }
             }
-            .mails{
-                .pe-2{
+
+            .mails {
+                .pe-2 {
                     padding-right: .25rem;
-                    img{
+
+                    img {
                         max-width: 13px !important;
                     }
                 }
-                h6{
+
+                h6 {
                     font-size: $font-size-sm;
                 }
-                a{
-                    font-size: $font-size-sm    ;
+
+                a {
+                    font-size: $font-size-sm ;
                 }
             }
         }
-        &.faq-contact{
-            .text-info{
+
+        &.faq-contact {
+            .text-info {
                 font-weight: 700;
             }
-            .content{
-                p{
+
+            .content {
+                p {
                     font-size: 14px;
                 }
             }
         }
+
         &.meet-puffers {
             &:before {
                 // display: none;
@@ -1001,16 +1156,21 @@ ul.social-icons {
             }
         }
     }
-    footer{
+
+    footer {
         background-color: #F8F2FE;
-        a,p{
-            font-size: $font-size-sm !important;
-            
+
+        a,
+        p {
+            font-size: $font-size-sm  !important;
+
         }
-        h5{
+
+        h5 {
             font-size: $font-size-sm;
         }
-        img{
+
+        img {
             width: 80%;
         }
     }
