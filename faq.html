@@ -19,8 +19,10 @@
         <img src="images/logo.png" width="160px">
       </a>
       <!-- toggle button for mobile nav -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
         aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -62,7 +64,6 @@
       </div>
     </div>
   </nav>
-
     <!-- FAQ Accordion sec  -->
     <section class="sec-padding">
         <div class="container">
@@ -343,8 +344,8 @@
       </div>
     </div>
   </section>
-  <!-- footer  Icon Row-->
-  <section class="ptpx-10 pbpx-10 bg-cyan footer-icons d-none d-md-block">
+   <!-- footer  Icon Row-->
+   <section class="ptpx-10 pbpx-10 bg-cyan footer-icons d-none d-md-block">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -365,7 +366,7 @@
   <!-- footer -->
   <footer class="">
     <div class=" container">
-      <div class="row   Newsletter sec-padding align-center pbpx-30 " data-aos="fade-up">
+      <div class="row   Newsletter sec-padding align-center pb- --small " data-aos="fade-up">
         <div class="col-md-6  clearfix col-3">
           <img src="images/Footer-logo.png" class="footer-logo">
           <div class="clearfix h-34 hidden-md-up"></div>
@@ -464,5 +465,12 @@
     integrity="sha512-/bOVV1DV1AQXcypckRwsR9ThoCj7FqTV2/0Bm79bL3YSyLkVideFLE3MIZkq1u5t28ke1c0n31WYCOrO01dsUg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script type="text/javascript" src="js/custom.js"></script>
+  <script>
+    const tooltips = document.querySelectorAll('.tt')
+    tooltips.forEach(t => {
+      new bootstrap.Tooltip(t)
+    })
+
+  </script>
 </body>
 </html>

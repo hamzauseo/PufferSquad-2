@@ -96,6 +96,15 @@ $(function () {
         asNavFor: ".labels",
         responsive: [
             {
+                breakpoint: 1200,
+                settings: {
+                    arrows: true,
+                    draggable: false,
+                    swipe: false,
+                    slidesToShow: 3,
+                }
+            },
+            {
                 breakpoint: 992,
                 settings: {
                     arrows: true,
@@ -143,6 +152,15 @@ $(function () {
         draggable: false,
         asNavFor: ".loading-bar",
         responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    arrows: true,
+                    draggable: false,
+                    swipe: true,
+                    slidesToShow: 3,
+                }
+            },
             {
                 breakpoint: 992,
                 settings: {

@@ -319,7 +319,10 @@
     }
 
     &.advantage {
-        @media (min-width:768px) {
+        @media (min-width:992px) {
+            transform: translateY(-20%);
+        }
+        @media (min-width:1200px) {
             transform: translateY(-40%);
         }
 
