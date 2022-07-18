@@ -13250,7 +13250,7 @@ section.join-community ul.social-icons li a {
   display: block;
   text-align: center;
 }
-section.join-community ul.social-icons li a i {
+section.join-community ul.social-icons li a img {
   border-radius: 12px;
   background-color: #4964f5;
   font-size: 30px;
@@ -13258,7 +13258,10 @@ section.join-community ul.social-icons li a i {
   display: block;
   padding: 10px;
   min-width: 50px;
+  height: 50px;
+  margin: 0px;
   transform: translate(0px, -0.5px);
+  aspect-ratio: 1/1;
 }
 section.join-community ul.social-icons li a:hover i {
   background: #6c34a9;
@@ -13569,6 +13572,13 @@ ul.social-icons.\--right {
     margin-left: auto !important;
     margin-right: auto !important;
   }
+}
+ul.social-icons.\--right li img {
+  height: 28px;
+  margin: 0px 5px;
+  width: auto;
+  fill: white;
+  aspect-ratio: 1/1;
 }
 ul.social-icons.\--footer {
   margin: 10px 0px;

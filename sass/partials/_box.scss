@@ -1,24 +1,30 @@
 .box {
     position: relative;
+
     &.rgb-box {
-		padding: 40px 50px;
-		background-color: rgba($white, .4);
-		border-radius: 30px;
-		box-shadow: 0px 0px 0px 7px rgba($purple, .1);
-		&.\--pss {
-			padding: 40px 20px;
-		}
-		@media (max-width:768px) {
-			padding: 30px 10px;
-            &.mob-x-spacing{
-                margin:0px 15px;
+        padding: 40px 50px;
+        background-color: rgba($white, .4);
+        border-radius: 30px;
+        box-shadow: 0px 0px 0px 7px rgba($purple, .1);
+
+        &.\--pss {
+            padding: 40px 20px;
+        }
+
+        @media (max-width:768px) {
+            padding: 30px 10px;
+
+            &.mob-x-spacing {
+                margin: 0px 15px;
             }
-            &.mob-y-spacing{
+
+            &.mob-y-spacing {
                 padding-left: 20px;
                 padding-right: 20px;
             }
-		}
-	}
+        }
+    }
+
     &.product-card {
         border-radius: 20px;
         overflow: hidden;
@@ -142,7 +148,8 @@
                 figure {
                     // max-height: 210px;
                     min-height: 110px;
-                    img{
+
+                    img {
                         max-height: 100px;
                     }
 
@@ -176,8 +183,9 @@
             background-repeat: no-repeat;
             right: 10%;
         }
-        &.innerpage{
-            &::before{
+
+        &.innerpage {
+            &::before {
                 display: none;
             }
         }
@@ -199,7 +207,7 @@
             background-image: $mint-bg;
             z-index: -1;
             background-size: contain;
-    background-repeat: no-repeat;
+            background-repeat: no-repeat;
         }
 
         .mint-title {
@@ -246,12 +254,14 @@
             color: #6c34a9;
             font-size: 18px;
             font-weight: 700;
-            &:not(:last-of-type){
+
+            &:not(:last-of-type) {
                 margin-bottom: 0px;
             }
-            small{
+
+            small {
                 font-size: 15px;
-            font-weight: 500;
+                font-weight: 500;
             }
         }
 
@@ -322,6 +332,7 @@
         @media (min-width:992px) {
             transform: translateY(-20%);
         }
+
         @media (min-width:1200px) {
             transform: translateY(-40%);
         }
@@ -376,7 +387,8 @@
             .icon-node {
                 border-bottom: none;
             }
-    
+
+        }
     }
 
     &.whybuy-card {
@@ -477,7 +489,8 @@
 
     }
 }
-select{
+
+select {
     background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronDownCircle-20.png);
     background-position: 98%;
     background-repeat: no-repeat;

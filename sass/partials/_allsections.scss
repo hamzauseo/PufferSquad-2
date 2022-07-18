@@ -417,7 +417,7 @@ section {
                     display: block;
                     text-align: center;
 
-                    i {
+                    img {
                         border-radius: 12px;
                         background-color: #4964f5;
                         font-size: 30px;
@@ -425,7 +425,10 @@ section {
                         display: block;
                         padding: 10px;
                         min-width: 50px;
+                        height: 50px;
+                        margin: 0px;
                         transform: translate(0px, -0.5px);
+                        aspect-ratio: 1/1;
                     }
 
                     &:hover {
@@ -807,7 +810,18 @@ ul.social-icons {
 
 
         }
+        li{
+            img{
+                height: 28px;
+                margin:0px 5px;
+                width: auto;
+                fill:white;
+                aspect-ratio: 1/1;
+            }
+            
+        }
     }
+
 
     &.\--footer {
         margin: 10px 0px;
