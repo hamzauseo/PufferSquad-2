@@ -12903,6 +12903,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   }
 }
 
+select {
+  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronDownCircle-20.png);
+  background-position: 98%;
+  background-repeat: no-repeat;
+}
+
 header nav .nav-link {
   text-transform: uppercase;
 }
