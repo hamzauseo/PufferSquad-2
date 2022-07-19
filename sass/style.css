@@ -12678,6 +12678,83 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .box.mint-box .mint-border-image img {
   border-radius: 28px;
 }
+.box.mint-box .mint-sold-details p {
+  color: white;
+  font-size: 22px;
+  margin: 20px 0;
+}
+.box.mint-box .mint-sold-details p span {
+  display: block;
+  font-weight: 700;
+}
+@media (max-width: 992px) {
+  .box.mint-box .mint-sold-details p {
+    font-size: 14px;
+  }
+  .box.mint-box .mint-sold-details p:nth-last-of-type() {
+    margin-bottom: 0px;
+  }
+  .box.mint-box .mint-sold-details .text-white {
+    font-size: 17px !important;
+  }
+}
+.box.mint-box.mint-page::before {
+  top: inherit;
+  bottom: -10%;
+  max-height: 500px;
+  left: -15%;
+  background-position: center bottom;
+}
+.box.mint-box.mint-page .wallet-details {
+  margin-top: 30px;
+  max-width: 600px;
+}
+.box.mint-box.mint-page .wallet-details > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+}
+.box.mint-box.mint-page .wallet-details > div h5, .box.mint-box.mint-page .wallet-details > div .h5, .box.mint-box.mint-page .wallet-details > div p, .box.mint-box.mint-page .wallet-details > div button {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+@media (max-width: 767px) {
+  .box.mint-box.mint-page .wallet-details > div h5, .box.mint-box.mint-page .wallet-details > div .h5, .box.mint-box.mint-page .wallet-details > div p, .box.mint-box.mint-page .wallet-details > div button {
+    font-size: 14px;
+  }
+  .box.mint-box.mint-page .wallet-details > div h5 span, .box.mint-box.mint-page .wallet-details > div .h5 span, .box.mint-box.mint-page .wallet-details > div p span, .box.mint-box.mint-page .wallet-details > div button span {
+    font-size: 14px !important;
+  }
+}
+.box.mint-box.mint-page .wallet-details > div h5.qty-main span, .box.mint-box.mint-page .wallet-details > div .qty-main.h5 span, .box.mint-box.mint-page .wallet-details > div p.qty-main span, .box.mint-box.mint-page .wallet-details > div button.qty-main span {
+  font-size: 20px;
+  color: white;
+}
+@media (max-width: 767px) {
+  .box.mint-box.mint-page a.btn {
+    font-size: 11px !important;
+  }
+}
+@media (min-width: 0px) {
+  .box.mint-box.soldout::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 48%;
+    background-color: #3c2075;
+    content: "";
+    height: 100%;
+    z-index: 0;
+    border-radius: 0px 36px 36px 0;
+  }
+}
+.box.mint-box.soldout > div {
+  position: relative;
+  z-index: 1;
+}
 .box.roadmap {
   margin: 15px 15px 0;
   background-color: rgba(255, 255, 255, 0.89);
@@ -13850,7 +13927,7 @@ ul.social-icons li a:hover i {
   section.special-forces:before {
     display: none;
   }
-  section.mint-section .mint-box {
+  section.mint-section .mint-box:not(.mint-page) {
     margin: -15px;
     border-radius: 0px;
     padding: 30px 30px;
@@ -13890,6 +13967,32 @@ ul.social-icons li a:hover i {
   }
   section.mint-section .mint-box .mint-title {
     font-size: calc(3rem + 2.1vw);
+  }
+  section.mint-section .mint-box.mint-page {
+    padding: 30px 20px;
+    border-radius: 26px;
+    position: relative;
+    text-align: center;
+  }
+  section.mint-section .mint-box.mint-page::before {
+    left: -20%;
+    background-position: center bottom;
+  }
+  section.mint-section .mint-box.mint-page .mint-title {
+    font-size: 3rem !important;
+  }
+  section.mint-section .mint-box.mint-page .inner .text-white {
+    font-size: 1.1rem;
+  }
+  section.mint-section .mint-box.mint-page .inner .dropDateCount {
+    margin-top: 10px !important;
+  }
+  section.mint-section .mint-box.mint-page .mint-border-image {
+    border-radius: 25px;
+    padding: 10px;
+  }
+  section.mint-section .mint-box.mint-page .mint-border-image img {
+    border-radius: 18px;
   }
   section.mint-section .open-sea {
     text-align: center;
@@ -13967,7 +14070,31 @@ section.our-team .slick-next:before {
     height: 290px;
     border-radius: 35px;
   }
-
+}
+@media (max-width: 768px) and (max-width: 576px) {
+  section.mint-section .mint-box.mint-page {
+    padding: 30px 20px;
+    border-radius: 26px;
+    position: relative;
+  }
+  section.mint-section .mint-box.mint-page .mint-title {
+    font-size: 2rem !important;
+  }
+  section.mint-section .mint-box.mint-page .inner .text-white {
+    font-size: 0.8rem;
+  }
+  section.mint-section .mint-box.mint-page .inner .dropDateCount {
+    margin-top: 10px !important;
+  }
+  section.mint-section .mint-box.mint-page .mint-border-image {
+    border-radius: 25px;
+    padding: 10px;
+  }
+  section.mint-section .mint-box.mint-page .mint-border-image img {
+    border-radius: 18px;
+  }
+}
+@media (max-width: 768px) {
   footer {
     background-color: #F8F2FE;
   }
@@ -13981,7 +14108,8 @@ footer p {
   footer img {
     width: 80%;
   }
-
+}
+@media (max-width: 768px) {
   .slide__ {
     padding: 40px 0;
   }
