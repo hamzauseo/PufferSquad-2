@@ -1,0 +1,1176 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puffersquadd Cart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/9ba124dfab.js" crossorigin="anonymous"></script>
+
+    <link href="sass/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light pt-3 pb-3 bg-white">
+        <div class="container-xl">
+            <!-- navbar brand / title -->
+            <a class="navbar-brand" href="#intro">
+                <img src="images/logo.png" width="160px">
+            </a>
+            <!-- toggle button for mobile nav -->
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#topics">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Mint</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Boutique</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a class="nav-link" href="#pricing">Roadmap</a>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a class="nav-link" href="#pricing">Faq</a>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a class="nav-link" href="#pricing">Reach Out</a>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a class="nav-link" href="#pricing"><i class="bi bi-heart-fill"></i>
+                            Wishlist</a>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a class="nav-link" href="#pricing"><i class="bi bi-cart-fill"></i>
+
+                            Cart</a>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a class="nav-link" href="#pricing"><i class="bi bi-person-fill"></i>
+                            Login/Sign up </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="clearfix h-20 hidden-lg-up col-xs-12"></div>
+    <section class="clearfix relative-block herobanner  ">
+        <div class="boutiquehero-slider dots-n-arrow-bs  relative-block">
+            <!-- Loop Start -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style=" background-image: url(images/boutique.svg);">
+                        <img src="images/transparent.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption ">
+                            <div class="container">
+                                <div class="row">
+
+                                    <div class="col-md-5 col-6">
+                                        <img src="images/puffer.svg" alt="">
+                                        <p class="text-uppercase fs-5 mb-0 text-dark">New Item Releases In:</p>
+                                        <div id="dropDateCount" class="dropDateCount">
+                                            <div><span class="number">67</span><span>days</span></div>
+                                            <div><span class="number">22</span><span>hours</span></div>
+                                            <div><span class="number">38</span><span>minutes</span></div>
+                                            <div><span class="number">44</span><span>seconds</span></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item " style=" background-image: url(images/boutique.svg);">
+                        <img src="images/transparent.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption ">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-5 col-6">
+                                        <img src="images/puffer.svg" alt="">
+                                        <p class="text-uppercase fs-5 mb-0 text-dark">New Item Releases In:</p>
+                                        <div id="dropDateCount" class="dropDateCount">
+                                            <div><span class="number">67</span><span>days</span></div>
+                                            <div><span class="number">22</span><span>hours</span></div>
+                                            <div><span class="number">38</span><span>minutes</span></div>
+                                            <div><span class="number">44</span><span>seconds</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item " style=" background-image: url(images/boutique.svg);">
+                        <img src="images/transparent.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption ">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-5 col-6">
+                                        <img src="images/puffer.svg" alt="">
+                                        <p class="text-uppercase fs-5 mb-0 text-dark">New Item Releases In:</p>
+                                        <div id="dropDateCount" class="dropDateCount">
+                                            <div><span class="number">67</span><span>days</span></div>
+                                            <div><span class="number">22</span><span>hours</span></div>
+                                            <div><span class="number">38</span><span>minutes</span></div>
+                                            <div><span class="number">44</span><span>seconds</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="sec-padding boutique-products">
+        <div class="container">
+            <div class="mx-1 mx-md-0">
+                <div class="box rgb-box pt-3 pt-md-5 mob-x-spacing mob-y-spacing">
+                    <div class="row">
+                        <div class="col-md-12 text-center text-md-start">
+                            <h1 class="ff-special">Boutique</h1>
+                        </div>
+                    </div>
+                    <div class="home-products-card ">
+                        <div class="col-md-12 padd  -sm-7">
+                            <div class="products-filter d-flex align-items-center justify-content-end">
+                                <div class="btn-group">
+                                    <button class="btn btn-altwhite --rounded dropdown-toggle" type="button"
+                                        id="defaultDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true"
+                                        aria-expanded="false">
+                                        All Products
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+                                        <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="btn-group">
+                                    <button class="btn btn-altwhite --rounded dropdown-toggle" type="button"
+                                        id="defaultDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true"
+                                        aria-expanded="false">
+                                        Happy
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+                                        <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="btn-group">
+                                    <button class="btn btn-altwhite --rounded dropdown-toggle" type="button"
+                                        id="defaultDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true"
+                                        aria-expanded="false">
+                                        All Traits
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+                                        <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="btn-group">
+                                    <button class="btn btn-altwhite --rounded dropdown-toggle" type="button"
+                                        id="defaultDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true"
+                                        aria-expanded="false">
+                                        All Colors
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+                                        <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                        <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pt-3">
+
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="product-card --small box">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product1.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="product-card --small box">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product2.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="box product-card --small">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="box product-card --small">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="box product-card --small">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="box product-card --small">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="box product-card --small">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="box product-card --small">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="box product-card --small">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="box product-card --small">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="box product-card --small">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="box product-card --small">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="box product-card --small">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="box product-card --small">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="box product-card --small">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="box product-card --small">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="box product-card --small">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="box product-card --small">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="box product-card --small">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="box product-card --small">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="box product-card --small">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="box product-card --small">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="product-card --small box">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product4.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$ 22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6 padd-sm-7 col-sm-6">
+                                <div class="product-card --small box">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product4.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$ 22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center justify-content-center text-center">
+                            <div class="col-md-4 mt-3">
+
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active"><a class="page-link active" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="sec-padding boutique-purple-products">
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-md-12 text-center">
+                    <h2 class="text-uppercase fw-light  text-lg-grey"><span class="fw-regular">You Might </span><br>
+                        <span class="ff-special display-5"> also like</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row mx-2 mx-md-0">
+                <div class="purple-slider dots-n-arrow-v2">
+                    <div class="col-md-3 col-6 col-sm-6">
+                        <div class="box product-card --purple">
+                            <div class="image-node">
+                                <figure class="bg-contain bg-norepeat bg-center" style="background-image:url();">
+                                    <img src="images/Product3.png" alt="">
+                                    <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="content-node">
+                                <h6 class="title">Orange Puffer</h6>
+                                <p class="cat">Orange Stressballz</p>
+                            </div>
+                            <div class="pricencart-node">
+                                <p class="price">$22</p>
+                                <span class="cart"> <i class="bi bi-cart"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 col-sm-6">
+                        <div class="box product-card --purple">
+                            <div class="image-node">
+                                <figure class="bg-contain bg-norepeat bg-center" style="background-image:url();">
+                                    <img src="images/Product3.png" alt="">
+                                    <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="content-node">
+                                <h6 class="title">Orange Puffer</h6>
+                                <p class="cat">Orange Stressballz</p>
+                            </div>
+                            <div class="pricencart-node">
+                                <p class="price">$22</p>
+                                <span class="cart"> <i class="bi bi-cart"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 col-sm-6">
+                        <div class="box product-card --purple">
+                            <div class="image-node">
+                                <figure class="bg-contain bg-norepeat bg-center" style="background-image:url();">
+                                    <img src="images/Product3.png" alt="">
+                                    <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="content-node">
+                                <h6 class="title">Orange Puffer</h6>
+                                <p class="cat">Orange Stressballz</p>
+                            </div>
+                            <div class="pricencart-node">
+                                <p class="price">$22</p>
+                                <span class="cart"> <i class="bi bi-cart"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 col-sm-6">
+                        <div class="box product-card --purple">
+                            <div class="image-node">
+                                <figure class="bg-contain bg-norepeat bg-center" style="background-image:url();">
+                                    <img src="images/Product3.png" alt="">
+                                    <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="content-node">
+                                <h6 class="title">Orange Puffer</h6>
+                                <p class="cat">Orange Stressballz</p>
+                            </div>
+                            <div class="pricencart-node">
+                                <p class="price">$22</p>
+                                <span class="cart"> <i class="bi bi-cart"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 col-sm-6">
+                        <div class="box product-card --purple">
+                            <div class="image-node">
+                                <figure class="bg-contain bg-norepeat bg-center" style="background-image:url();">
+                                    <img src="images/Product3.png" alt="">
+                                    <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="content-node">
+                                <h6 class="title">Orange Puffer</h6>
+                                <p class="cat">Orange Stressballz</p>
+                            </div>
+                            <div class="pricencart-node">
+                                <p class="price">$22</p>
+                                <span class="cart"> <i class="bi bi-cart"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 col-sm-6">
+                        <div class="box product-card --purple">
+                            <div class="image-node">
+                                <figure class="bg-contain bg-norepeat bg-center" style="background-image:url();">
+                                    <img src="images/Product3.png" alt="">
+                                    <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="content-node">
+                                <h6 class="title">Orange Puffer</h6>
+                                <p class="cat">Orange Stressballz</p>
+                            </div>
+                            <div class="pricencart-node">
+                                <p class="price">$22</p>
+                                <span class="cart"> <i class="bi bi-cart"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 col-sm-6">
+                        <div class="box product-card --purple">
+                            <div class="image-node">
+                                <figure class="bg-contain bg-norepeat bg-center" style="background-image:url();">
+                                    <img src="images/Product3.png" alt="">
+                                    <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="content-node">
+                                <h6 class="title">Orange Puffer</h6>
+                                <p class="cat">Orange Stressballz</p>
+                            </div>
+                            <div class="pricencart-node">
+                                <p class="price">$22</p>
+                                <span class="cart"> <i class="bi bi-cart"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-md-12  p-0">
+                    <img src="images/boutique-banner.svg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-padding boutique-cyan-products">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-12 text-center">
+                    <h2 class="text-uppercase fw-light  text-lg-grey"><span class="fw-regular">Top Seller </span><br>
+                        <span class="ff-special display-5"> Items</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="mx-1 mx-md-0">
+                <div class="box rgb-box pt-3 pt-md-5 mob-x-spacing mob-y-spacing">
+                    <div class="row">
+                        <div class="purple-slider dots-n-arrow-v2">
+                            <div class="col-md-3 col-6 col-sm-6">
+                                <div class="box product-card --cyan">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 col-sm-6">
+                                <div class="box product-card --cyan">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 col-sm-6">
+                                <div class="box product-card --cyan">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 col-sm-6">
+                                <div class="box product-card --cyan">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 col-sm-6">
+                                <div class="box product-card --cyan">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 col-sm-6">
+                                <div class="box product-card --cyan">
+                                    <div class="image-node">
+                                        <figure class="bg-contain bg-norepeat bg-center"
+                                            style="background-image:url();">
+                                            <img src="images/Product3.png" alt="">
+                                            <figcaption><span class="wishlist"><i class="bi bi-heart"></i></span>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="content-node">
+                                        <h6 class="title">Orange Puffer</h6>
+                                        <p class="cat">Orange Stressballz</p>
+                                    </div>
+                                    <div class="pricencart-node">
+                                        <p class="price">$22</p>
+                                        <span class="cart"> <i class="bi bi-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-padding --small"></section>
+    <!-- partners-section  -->
+    <section class="sec-padding partners-section pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="text-uppercase fw-light  text-lg-grey"><span class="fw-regular">Become a </span><br>
+                        <span class="ff-special display-5"> Partner</span>
+                    </h2>
+                </div>
+                <div class="col-md-12 text-center px-4 px-md-0">
+                  
+                    <img src="../images/key_dark_desktop.png" class="d-none d-md-block img-fluid">
+                    <img src="../images/key_dark_mobile.png" class="d-block d-md-none img-fluid">
+                </div>
+                <div class="col-md-12 text-center mt-4 d-none d-md-block">
+                    <a href="" class="btn btn-purple btn-lg">Buy an NFT Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- footer  Icon Row-->
+    <section class="ptpx-10 pbpx-10 bg-cyan footer-icons d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="clearfix ptpx-">
+                        <ul class="social-icons --right --footer">
+                            <li><a href=""><img src="images/opensea.svg"></a></li>
+                            <li><a href=""><img src="images/discord.svg"></a></li>
+                            <li><a href=""><img src="images/instagram.svg"></a></li>
+                            <li><a href=""><img src="images/tiktok.svg"></a></li>
+                            <li><a href=""><img src="images/twitter.svg"></a></li>
+                            <li><a href=""><img src="images/facebook.svg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="">
+        <div class=" container">
+            <div class="row   Newsletter sec-padding align-center pb- --small " data-aos="fade-up">
+                <div class="col-md-6  clearfix col-3">
+                    <img src="images/Footer-logo.png" class="footer-logo">
+                    <div class="clearfix h-34 hidden-md-up"></div>
+                </div>
+                <div class="col-md-6 row col-9 ps-0 pe-0">
+                    <div class="col-md-4  matchheight col-4">
+                        <h5>
+                            Important Links
+                        </h5>
+
+                        <p><a href="" class="text-reset">Privacy Policy</a></p>
+                        <p><a href="" class="text-reset">Sign Up</a></p>
+
+                    </div>
+                    <div class="col-md-4  matchheight col-4">
+                        <h5>
+                            Quick Links
+                        </h5>
+
+                        <p><a href="" class="text-reset">Home</a></p>
+                        <p><a href="" class="text-reset">About Fugu</a></p>
+                        <p><a href="" class="text-reset">Collections</a></p>
+
+                    </div>
+                    <div class="col-md-4  matchheight hidden-sm-down col-4">
+                        <h5 style="opacity: 0;">
+                            Quick links
+                        </h5>
+
+                        <p><a href="" class="text-reset">Contact Us</a></p>
+                        <p><a href="" class="text-reset">FAQ</a></p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container d-md-block d-none">
+            <div class="row hr">
+                <hr class="line bg-lgrey">
+            </div>
+        </div>
+        <section class="ptpx-10 pbpx-10 bg-cyan footer-icons  d-md-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="clearfix ptpx-">
+                            <ul class="social-icons d-table mx-auto --footer">
+                                <li><a href=""><img src="images/opensea.svg"></a></li>
+                                <li><a href=""><img src="images/discord.svg"></a></li>
+                                <li><a href=""><img src="images/instagram.svg"></a></li>
+                                <li><a href=""><img src="images/tiktok.svg"></a></li>
+                                <li><a href=""><img src="images/twitter.svg"></a></li>
+                                <li><a href=""><img src="images/facebook.svg"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row sec-padding --xsmall  pt-3 pt-md-0">
+                <div class="col-md-6 col-6 padd-sm-7">
+                    <p class="copyright">&copy; 2022 Powered By Fugu Nation.</p>
+                </div>
+                <div class="col-6 padd-sm-7">
+                    <div class="clearfix d-flex align-items-center justify-content-end">
+                        <p class="mx-2"><a href="">Terms & Conditions</a></p>
+                        <p class="mx-2"><a href="">Privacy Policy</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"
+        integrity="sha512-QDsjSX1mStBIAnNXx31dyvw4wVdHjonOwrkaIhpiIlzqGUCdsI62MwQtHpJF+Npy2SmSlGSROoNWQCOFpqbsOg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+        integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.min.js"
+        integrity="sha512-sZ2H+EQd+WBqD/p1lsiqdLI6IldPoh0aWEL6gGyXVboGOzfMlUWT57pdGk9iVzO0qIWTTs7yRXQhgAncsjdbWA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"
+        integrity="sha512-/bOVV1DV1AQXcypckRwsR9ThoCj7FqTV2/0Bm79bL3YSyLkVideFLE3MIZkq1u5t28ke1c0n31WYCOrO01dsUg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t => {
+            new bootstrap.Tooltip(t)
+        })
+
+    </script>
+</body>
+</html>

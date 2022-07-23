@@ -30,7 +30,58 @@ $(function () {
         });
 
     });
+   
+    $('.purple-slider').slick({
 
+        dots: false,
+        arrows: true,
+        autoplay: false,
+        autoplaySpeed: 2500,
+        infinite: true,
+        slidesToShow: 4,
+        fade: false,
+        slidesToScroll: 1,
+        speed: 600,
+       
+        pauseOnHover: false,
+        vertical: false,
+        verticalSwiping: false,
+        verticalReverse: false,
+
+
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    arrows: true,
+                    draggable: false,
+                    swipe: false,
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    arrows: true,
+                    draggable: false,
+                    swipe: false,
+                    slidesToShow: 2,
+                }
+            },
+
+            {
+                breakpoint: 576,
+                settings: {
+                    arrows: true,
+                    dots: false,
+                    draggable: true,
+                    swipe: true,
+                    slidesToShow: 2,
+                }
+            }
+        ]
+
+    });
     $('.our-team-slider').slick({
 
         dots: false,

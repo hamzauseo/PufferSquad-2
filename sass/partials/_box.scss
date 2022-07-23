@@ -766,6 +766,89 @@
                 }
             }
         }
+        &.\--purple{
+            border:1px solid var(--bs-gray-300);
+            margin-left:  12px ;
+            margin-right: 12px ;
+            background-color: transparent;
+            box-shadow: 0px 0px 20px -10px #ccc;
+            .image-node {
+                figure{
+                    background-color:rgba($white,.6);
+                }
+            }
+         .pricencart-node {
+            background-color: var(--bs-dk-purple);
+            .cart{
+                background-color: var(--bs-primary);
+            }
+         }
+         &:hover{
+            .pricencart-node {
+                background-color: var(--bs-primary);
+                .cart{
+                    background-color: var(--bs-dk-purple);
+                }
+             }
+         }
+        }
+        &.\--cyan{
+            border:1px solid var(--bs-gray-300);
+            margin-left:  12px ;
+            margin-right: 12px ;
+            background-color: transparent;
+            box-shadow: 0px 0px 20px -10px #ccc;
+            .image-node {
+                figure{
+                    background-color:rgba($white,.6);
+                }
+            }
+         .pricencart-node {
+            background-color: var(--bs-cyan);
+            .cart{
+                background-color: var(--bs-dk-cyan);
+            }
+         }
+         &:hover{
+            .pricencart-node {
+                background-color: var(--bs-dk-cyan);
+                .cart{
+                    background-color: var(--bs-cyan);
+                }
+             }
+         }
+        }
+        &.\--small{
+            border:1px solid var(--bs-gray-300);
+            margin-bottom: 20px;
+            .title{
+                font-size: 1rem;
+            }
+            .cat{
+                font-size: 13px;
+            }
+            .image-node {
+                figure{
+                    background-color: transparent;
+                    .wishlist{
+                        font-size: 17px;
+                    }
+                }
+            }
+            .pricencart-node {
+                .cart{
+                    width: 35px;
+                    height: 35px;
+                    i{
+                        line-height: 35px;
+                        font-size: 18px;
+                    }
+                    .price{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
     }
 
     &.community-img {
