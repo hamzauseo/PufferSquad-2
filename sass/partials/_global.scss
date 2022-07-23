@@ -25,6 +25,12 @@ body{
     font-family: 'Sheeping Dogs';
     text-transform: initial;
 }
+.ff-kc{
+    font-family: 'Kenyan Coffee';
+}
+.ff-kc-bold{
+    font-family: 'Kenyan Coffee Bold';
+}
 .sec-padding {
     padding: 80px 0;
     &.\--small {
@@ -52,6 +58,9 @@ body{
   }
 header{
     
+}
+.form-label,.form-check-label{
+    font-weight: 600;
 }
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     font-family: 'Roboto';
