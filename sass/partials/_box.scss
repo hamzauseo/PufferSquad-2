@@ -1,45 +1,50 @@
 .box {
     position: relative;
+
     &.checkout-signin {
-		span {
-			&.op-or {
-				color: white;
-				font-size: 16px;
-				background: $orange;
-				width: 47px;
-				display: block;
-				height: 47px;
-				margin: 10px auto;
-				text-align: center;
-				line-height: 32px;
-				border-radius: 50%;
-				box-shadow: 0px 0px 0px 7px #ffcf784d;
-				border: 7px solid #ffffff8c;
+        span {
+            &.op-or {
+                color: white;
+                font-size: 16px;
+                background: $orange;
+                width: 47px;
+                display: block;
+                height: 47px;
+                margin: 10px auto;
+                text-align: center;
+                line-height: 32px;
+                border-radius: 50%;
+                box-shadow: 0px 0px 0px 7px #ffcf784d;
+                border: 7px solid #ffffff8c;
                 font-weight: 500;
-			}
-		}
-        ul{
-            &.socialmedia{
+            }
+        }
+
+        ul {
+            &.socialmedia {
                 padding-left: 0;
                 display: flex;
                 padding-top: 10px;
                 margin: 0px;
                 align-items: center;
                 justify-content: center;
-                li{
+
+                li {
                     display: inline-block;
                     float: left;
                     margin: 4px;
                     border-radius: 50%;
                     overflow: hidden;
                     max-width: 45px;
-                    img{
-                        max-width:100%;
+
+                    img {
+                        max-width: 100%;
                     }
                 }
             }
         }
-	}
+    }
+
     &.border-n-radius {
         border-radius: 15px;
         border: 1px solid;
@@ -766,84 +771,104 @@
                 }
             }
         }
-        &.\--purple{
-            border:1px solid var(--bs-gray-300);
-            margin-left:  12px ;
-            margin-right: 12px ;
+
+        &.\--purple {
+            border: 1px solid var(--bs-gray-300);
+            margin-left: 12px;
+            margin-right: 12px;
             background-color: transparent;
             box-shadow: 0px 0px 20px -10px #ccc;
+
             .image-node {
-                figure{
-                    background-color:rgba($white,.6);
+                figure {
+                    background-color: rgba($white, .6);
                 }
             }
-         .pricencart-node {
-            background-color: var(--bs-dk-purple);
-            .cart{
-                background-color: var(--bs-primary);
-            }
-         }
-         &:hover{
+
             .pricencart-node {
-                background-color: var(--bs-primary);
-                .cart{
-                    background-color: var(--bs-dk-purple);
+                background-color: var(--bs-dk-purple);
+
+                .cart {
+                    background-color: var(--bs-primary);
                 }
-             }
-         }
+            }
+
+            &:hover {
+                .pricencart-node {
+                    background-color: var(--bs-primary);
+
+                    .cart {
+                        background-color: var(--bs-dk-purple);
+                    }
+                }
+            }
         }
-        &.\--cyan{
-            border:1px solid var(--bs-gray-300);
-            margin-left:  12px ;
-            margin-right: 12px ;
+
+        &.\--cyan {
+            border: 1px solid var(--bs-gray-300);
+            margin-left: 12px;
+            margin-right: 12px;
             background-color: transparent;
             box-shadow: 0px 0px 20px -10px #ccc;
+
             .image-node {
-                figure{
-                    background-color:rgba($white,.6);
+                figure {
+                    background-color: rgba($white, .6);
                 }
             }
-         .pricencart-node {
-            background-color: var(--bs-cyan);
-            .cart{
-                background-color: var(--bs-dk-cyan);
-            }
-         }
-         &:hover{
+
             .pricencart-node {
-                background-color: var(--bs-dk-cyan);
-                .cart{
-                    background-color: var(--bs-cyan);
+                background-color: var(--bs-cyan);
+
+                .cart {
+                    background-color: var(--bs-dk-cyan);
                 }
-             }
-         }
+            }
+
+            &:hover {
+                .pricencart-node {
+                    background-color: var(--bs-dk-cyan);
+
+                    .cart {
+                        background-color: var(--bs-cyan);
+                    }
+                }
+            }
         }
-        &.\--small{
-            border:1px solid var(--bs-gray-300);
+
+        &.\--small {
+            border: 1px solid var(--bs-gray-300);
             margin-bottom: 20px;
-            .title{
+
+            .title {
                 font-size: 1rem;
             }
-            .cat{
+
+            .cat {
                 font-size: 13px;
             }
+
             .image-node {
-                figure{
+                figure {
                     background-color: transparent;
-                    .wishlist{
+
+                    .wishlist {
                         font-size: 17px;
                     }
                 }
             }
+
             .pricencart-node {
-                .cart{
+                .cart {
                     width: 35px;
                     height: 35px;
-                    i{
+
+                    i {
                         line-height: 35px;
                         font-size: 18px;
                     }
-                    .price{
+
+                    .price {
                         font-size: 18px;
                     }
                 }
