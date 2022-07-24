@@ -193,7 +193,151 @@ section {
             }
         }
     }
+    &.wishlist-section {
+        ul {
+            &.wishlist-product-list {
+                padding-top: 1.5em;
+                padding-left: 0px;
+                list-style: none;
 
+                li {
+                    padding: 20px;
+                    border: 1px solid #C5C5C6;
+                    border-radius: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 5px 0 20px;
+                    clear: both;
+                    flex-wrap: wrap;
+
+                    .thumb {
+                        max-width: 150px;
+
+                        img {
+                            max-width: 130px;
+                        }
+
+                        @media (max-width:768px) {
+                            max-width: 100px;
+
+                            img {
+                                max-width: 80px;
+                            }
+                        }
+                    }
+
+                    .product-details {
+                        min-width: 25%;
+
+                        .cat-name {
+                            font-size: 18px;
+                            margin: 0px 0 8px;
+                        }
+
+                        .price-node {
+                            font-size: 18px;
+
+                            .price {
+                                font-weight: 600;
+                            }
+                        }
+
+                        @media (max-width:768px) {
+                            min-width: 10%;
+
+                            .product-name {
+                                h5 {
+                                    font-size: 14px;
+                                }
+                            }
+
+                            .cat-name {
+                                font-size: 12px;
+                            }
+
+                            .price-node {
+                                font-size: 12px;
+                            }
+
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    .quantity {
+                        min-width: 100px;
+
+                        input {
+                            text-align: center;
+                            height: 50px;
+                            padding: 10px;
+                            font-size: 17px;
+                            border: 1px solid #C5C5C6;
+                            background: whitesmoke;
+                        }
+
+                        @media (max-width:768px) {
+                            min-width: 70px;
+
+                            input {
+                                height: auto;
+                                padding: 7px 4px;
+                                font-size: 11px;
+                                width: 46x;
+                                margin: 7px;
+                            }
+                        }
+                    }
+
+                    .remove-link {
+                        min-width: 100px;
+                        text-align: center;
+                        cursor: pointer;
+                        font-weight: 500;
+
+                        i {
+                            font-size: 27px;
+                            color: $orange;
+                            margin-bottom: 10px;
+
+                        }
+
+                        &:hover {
+                            color: tomato;
+
+                            i {
+                                color: tomato;
+
+                            }
+                        }
+
+                        @media (max-width:768px) {
+                            min-width: 40px;
+
+                            p {
+
+                                font-size: 9px;
+                            }
+                        }
+                    }
+                   @media (max-width:767px) {
+                        padding: 16px 10px;
+                        .btn{
+                            font-size: 12px;
+                            padding: 4px 6px;
+                        }
+                    }
+                    @media (max-width:576px) {
+                        padding: 16px 10px;
+                        .btn{
+                            font-size: 8px;
+                            padding: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
     &.cart-section {
         ul {
             &.cart-product-list {
