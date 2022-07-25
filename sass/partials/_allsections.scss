@@ -114,6 +114,42 @@ section {
                 font-weight: bold;
                 color: #bb1313;
             }
+            @media (max-width:767px) {
+                .product-content{
+                    font-size: 14px;
+                }
+                .item-ID{
+                    font-size: 12px;
+                }
+                h2,.title{
+                    font-size: 20px;
+                    margin-bottom: 5px;
+                }
+            }
+            @media (max-width:576px) {
+                .product-content{
+                    font-size: 12px !important;
+                    padding-top: 0px !important;
+                }
+                .item-ID{
+                    font-size: 12px;
+                }
+                h2,.title{
+                    font-size: 16px;
+                    margin-bottom: 5px !important;
+                }
+
+            }
+        }
+        @media (max-width:768px) {
+            .atc-btns{
+                >a{
+                    min-width: 35%;
+                    &:last-of-type{
+                        min-width: 20%;
+                    }
+                }
+            }
         }
     }
 

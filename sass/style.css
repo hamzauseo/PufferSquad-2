@@ -13782,6 +13782,39 @@ section.product-detail .product-detail .price {
   font-weight: bold;
   color: #bb1313;
 }
+@media (max-width: 767px) {
+  section.product-detail .product-detail .product-content {
+    font-size: 14px;
+  }
+  section.product-detail .product-detail .item-ID {
+    font-size: 12px;
+  }
+  section.product-detail .product-detail h2, section.product-detail .product-detail .h2, section.product-detail .product-detail .title {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 576px) {
+  section.product-detail .product-detail .product-content {
+    font-size: 12px !important;
+    padding-top: 0px !important;
+  }
+  section.product-detail .product-detail .item-ID {
+    font-size: 12px;
+  }
+  section.product-detail .product-detail h2, section.product-detail .product-detail .h2, section.product-detail .product-detail .title {
+    font-size: 16px;
+    margin-bottom: 5px !important;
+  }
+}
+@media (max-width: 768px) {
+  section.product-detail .atc-btns > a {
+    min-width: 35%;
+  }
+  section.product-detail .atc-btns > a:last-of-type {
+    min-width: 20%;
+  }
+}
 section.boutique-cyan-products .rgb-box {
   position: relative;
 }
